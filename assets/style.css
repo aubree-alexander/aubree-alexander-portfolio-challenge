@@ -1,0 +1,201 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+    --dark-green: #6B705C;
+    --light-green: #B7B7A4;
+    --peach: #DDBEA9;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*nav section*/
+
+nav {
+    background-color: var(--dark-green);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+nav h1 {
+    margin-left: 25px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    padding: 5px;
+    border-radius: 25px;
+}
+
+nav ul li a:hover {
+    background: var(--light-green);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+    transition: .6s ease;
+}
+
+
+/*about me section*/ 
+
+.about-me {
+    background-color: var(--light-green);
+    text-align: center;
+    display: flex;
+}
+
+.about-me img {
+    width: 35%;
+    padding: 10px;
+}
+
+.me-description {
+    padding-right: 20px;
+    width: 85%;
+    margin-right: 100px;
+    margin-top: 75px;
+}
+
+.me-description h1 {
+    border-bottom: 2px solid;
+    padding: 8px;
+}
+
+
+/*tile gallery*/ 
+
+.projects {
+    background-color: var(--peach);
+    display: flex;
+}
+
+.project-section-title {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 25px;
+}
+
+
+.projects-gallery {
+    --num-cols: 2;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+}
+
+
+/*.projects-gallery { 
+    display: flex;
+    height: 180px;
+    margin: 5px;
+    justify-content: flex-end;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+*/
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    width: 400px;
+    height: 200px;
+    border: 2px solid;
+    position: relative;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.tile:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px rgba (0, 0, 0);
+    transition: .5s ease;
+}
+
+#run-buddy {
+    background-image: url(./images/050-mock-up.jpg);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#run-buddy:hover {
+    opacity: 1;
+}
+
+.projects-gallery h3 {
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+}
+
+#run-buddy h3 {
+    font-style: normal;
+}
+/*footer*/ 
+
+footer {
+    background-color: var(--dark-green);
+}
+
+footer .contact {
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+
+}
+
+footer ul li {
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.contact h3 {
+    padding-top: 15px;
+}
+.contact-info ul li:hover {
+    background: var(--light-green);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+    transition: .6s ease;
+}
+
+
+
+/* Media Queries */
+
+
+@media screen and (max-width: 1024px) {
+    .projects.gallery {
+        --num-cols: 1;
+        --row-height: 200px;
+    }
+}
