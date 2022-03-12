@@ -98,10 +98,46 @@ nav ul li a:hover {
     --row-height: 300px;
     box-sizing: border-box;
     padding: 16px;
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
+.run-buddy-tile {
+    display: flex;
+}
+
+#run-buddy {
+    background-image: url(./images/050-mock-up.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    width: 825px;
+}
+
+#run-buddy:hover {
+    opacity: 1;
+}
+
+#run-buddy h3 {
+    font-style: normal;
+}
+
+.coming-soon-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coming-soon-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*.coming-soon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+*/
 
 /*.projects-gallery { 
     display: flex;
@@ -135,25 +171,13 @@ nav ul li a:hover {
     transition: .5s ease;
 }
 
-#run-buddy {
-    background-image: url(./images/050-mock-up.jpg);
-    background-size: cover;
-    opacity: 0.5;
-}
-
-#run-buddy:hover {
-    opacity: 1;
-}
-
 .projects-gallery h3 {
     text-align: center;
     width: 100%;
     font-style: italic;
 }
 
-#run-buddy h3 {
-    font-style: normal;
-}
+
 /*footer*/ 
 
 footer {
