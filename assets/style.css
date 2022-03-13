@@ -82,6 +82,8 @@ nav ul li a:hover {
 .projects {
     background-color: var(--peach);
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-section-title {
@@ -90,6 +92,11 @@ nav ul li a:hover {
     justify-content: flex-start;
     align-items: center;
     margin-left: 25px;
+}
+
+.project-section-title h2 {
+    border-bottom: 2px solid;
+    padding: 5px;
 }
 
 
@@ -108,9 +115,9 @@ nav ul li a:hover {
 }
 
 #run-buddy {
-    background-image: url(./images/050-mock-up.jpg);
+    background-image: url(./images/run-buddy-screenshot.png);
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.7;
     width: 825px;
 }
 
@@ -131,25 +138,6 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
 }
-
-/*.coming-soon {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-*/
-
-/*.projects-gallery { 
-    display: flex;
-    height: 180px;
-    margin: 5px;
-    justify-content: flex-end;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-*/
 
 .tile {
     display: flex;
@@ -214,12 +202,60 @@ footer ul li {
 
 
 
-/* Media Queries */
 
 
-@media screen and (max-width: 1024px) {
-    .projects.gallery {
-        --num-cols: 1;
-        --row-height: 200px;
+
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .about-me {
+        display: flex;
+        padding-bottom: 50px;
+        padding-right: 20px;
+    }
+
+    .about-me img {
+        padding-top: 50px;
+    }
+}
+    
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) { 
+    body {
+        overflow-x: hidden;
+    }
+
+    .about-me {
+        display: flex;
+        padding-bottom: 50px;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+}
+    
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-info ul {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
