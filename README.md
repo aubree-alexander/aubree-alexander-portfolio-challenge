@@ -11,7 +11,7 @@ Portfolio for Aubree Alexander.
 https://aubree-alexander.github.io/aubree-alexander-portfolio-challenge/
 
 ## Screenshot
-<img src="./assets/images/portfolio-screenshot.png>
+<img src="./assets/images/portfolio-screenshot.png" />
 
 ## Contribution
 Aubree Alexander
