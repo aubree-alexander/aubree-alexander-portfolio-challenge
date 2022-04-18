@@ -124,7 +124,13 @@ nav ul li a:hover {
     width: 825px;
 }
 
-#run-buddy:hover {
+#the-nasa-spirit {
+    background-image: url(./images/the-nasa-spirit.png);
+    background-size: cover;
+    opacity: 0.7;
+}
+
+#run-buddy:hover, #the-nasa-spirit:hover {
     opacity: 1;
 }
 
