@@ -113,12 +113,12 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
-.run-buddy-tile {
+.streamline-tile {
     display: flex;
 }
 
-#run-buddy {
-    background-image: url(./images/run-buddy-screenshot.png);
+#streamline {
+    background-image: url(./images/streamline-screenshot-crop.png);
     background-size: cover;
     opacity: 0.7;
     width: 825px;
@@ -130,11 +130,11 @@ nav ul li a:hover {
     opacity: 0.7;
 }
 
-#run-buddy:hover, #the-nasa-spirit:hover {
+#streamline:hover, #the-nasa-spirit:hover {
     opacity: 1;
 }
 
-#run-buddy h3 {
+#streamline h3 {
     font-style: normal;
 }
 
